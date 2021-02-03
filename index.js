@@ -12,7 +12,7 @@ clear();
 
 console.log(
   chalk.yellow(figlet.textSync("BTConverter CLI", { horizontalLayout: "full" })),
-  'Love u Day 💖'
+  'Love u Day sz'
   );
   
   const run = async () => {
