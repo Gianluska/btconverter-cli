@@ -11,16 +11,11 @@ const currencyFormatter = require('currency-formatter');
 clear();
 
 console.log(
-  chalk.yellow(figlet.textSync("BTConverter CLI", { horizontalLayout: "full" }))
-);
-
-if (files.directoryExists(".git")) {
-  console.log(chalk.red("Already a Git repository!"));
-  process.exit();
-}
-
-const run = async () => {
-  console.log('Love u Day 💖');
+  chalk.yellow(figlet.textSync("BTConverter CLI", { horizontalLayout: "full" })),
+  'Love u Day 💖'
+  );
+  
+  const run = async () => {
   const value = await inquirer.askGithubCredentials();
 
   const response = await fetch('https://brasilbitcoin.com.br/API/prices/BTC');
