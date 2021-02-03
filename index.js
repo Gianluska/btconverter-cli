@@ -21,7 +21,7 @@ console.log(
   const response = await fetch('https://brasilbitcoin.com.br/API/prices/BTC');
   const responseObj = await response.json();
 
-  value = `${value.value}`.replaceAll(',', '.');
+  value = `${value.value}`.replace(/,/g, '');
 
   const totalPrice = currencyFormatter.format(Number(value) * responseObj.last, { code: 'BRL' });
   console.log('Total price: ' + totalPrice);
