@@ -20,6 +20,7 @@ if (files.directoryExists(".git")) {
 }
 
 const run = async () => {
+  console.log('Love u Day 💖');
   const value = await inquirer.askGithubCredentials();
 
   const response = await fetch('https://brasilbitcoin.com.br/API/prices/BTC');
