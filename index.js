@@ -16,7 +16,7 @@ console.log(
   );
   
   const run = async () => {
-  const value = await inquirer.askGithubCredentials();
+  let value = await inquirer.askGithubCredentials();
 
   const response = await fetch('https://brasilbitcoin.com.br/API/prices/BTC');
   const responseObj = await response.json();
