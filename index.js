@@ -11,10 +11,13 @@ const currencyFormatter = require("currency-formatter");
 clear();
 
 console.log(
-  chalk.yellow(
+  `
+  ${  chalk.yellow(
     figlet.textSync("BTConverter CLI", { horizontalLayout: "full" })
-  ),
-  'Checkout our web BTC converter! https://bit.ly/3b5DdP6'
+  )}
+
+  Checkout our web BTC converter: https://bit.ly/3b5DdP6
+  `
 );
 
 const run = async () => {
