@@ -11,8 +11,7 @@ const currencyFormatter = require("currency-formatter");
 clear();
 
 console.log(
-  `
-  ${  chalk.yellow(
+  `${  chalk.yellow(
     figlet.textSync("BTConverter CLI", { horizontalLayout: "full" })
   )}
 
