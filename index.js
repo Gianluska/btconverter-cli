@@ -13,7 +13,8 @@ clear();
 console.log(
   chalk.yellow(
     figlet.textSync("BTConverter CLI", { horizontalLayout: "full" })
-  )
+  ),
+  'Checkout our web BTC converter! https://bit.ly/3b5DdP6'
 );
 
 const run = async () => {
