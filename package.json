@@ -1,6 +1,6 @@
 {
-  "name": "btconverter-brl",
-  "version": "1.0.8",
+  "name": "btconverter",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "bin": {
